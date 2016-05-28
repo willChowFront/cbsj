@@ -1,0 +1,149 @@
+/*	长白山居首页css*/
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+	border-bottom: 1px solid #bbb;
+}
+
+.header .logo {
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	background:url("../img/logo.png") no-repeat 0 0;
+	background-size: 120px 120px;
+	text-indent: -2000px;
+}
+
+.header .room-reservation {
+	position: absolute;
+	right: 15%;
+	top: 10%;
+	font-size: 18px;
+	color: #bbb;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #bbb;	
+}
+
+.header .room-reservation:hover{
+	text-decoration: none;
+}
+
+.header ul {
+	height: 45px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.header ul li {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width: 150px;
+}
+
+.header ul li a {
+	display:inline-block;
+	color:#bbb;
+	font-size: 16px;
+}
+
+.header ul li .active {
+	position: relative;
+	color:#fff;
+}
+
+.header ul li .active:after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 15px;
+	position: absolute;
+	left: 50%;
+	bottom: -13px;
+	background-color: #fff;
+}
+
+.content {
+	width: 100%;
+}
+
+.content .content-top{
+	position: relative;
+	width: 100%;
+	height: 600px;
+}
+
+.content .content-top img{
+	width: 100%;
+	height: 100%;
+}
+
+.content .sub-nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	line-height: 60px;
+	background-color: #E4E4E4;
+	opacity: 0.8;
+}
+
+.content .sub-nav div {
+	width: 600px;
+	margin: 0 auto;
+} 
+
+.content .sub-nav div a {
+	display: inline-block;
+	width: 195px;
+	height: 30px;
+	line-height: 30px;
+	color: #737070;
+	font-size: 16px;
+	text-align: center;
+	border-right: 1px solid #bbb;
+}
+
+.content .sub-nav div a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.content .sub-nav div a:last-child {
+	border-right:none; 
+}
+
+.content .content-middle h1{
+	height: 80px;
+	line-height: 80px;
+	width: 100%;
+	text-align: center;
+	font-size: 36px;
+	color: #999;
+	font-weight: normal;
+}
+
+.content .content-middle img {
+	display: block;
+	width: 800px;
+	height: 336px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.content .content-middle p {
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	color: #999;
+}
+
+.content .content-middle a {
+	
+}
