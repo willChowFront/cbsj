@@ -120,10 +120,10 @@
 }
 
 .content .content-middle {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
-.content .content-middle h1{
+.content .content-middle h1 , .content .content-bottom h1{
 	height: 80px;
 	line-height: 80px;
 	width: 100%;
@@ -141,17 +141,17 @@
 	margin-bottom: 20px;
 }
 
-.content .content-middle p {
+.content .content-middle p , .content .content-bottom p{
 	width: 100%;
 	text-align: center;
 	font-size: 16px;
 	color: #999;
 }
 
-.content .content-middle a {
+.content  a {
 	display: block;
 	position: relative;
-	width: 80px;
+	width: 130px;
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
@@ -161,69 +161,191 @@
 	color: #999;
 }
 
-.content .content-middle a:hover {
+.content  a:hover {
 	text-decoration: none;
 }
 
-.content .content-middle a:hover .a-border-top{
-	width: 80px;
+.content a:hover .a-border-top{
+	width: 130px;
 	left: 0;
 	margin-left: 0;
 } 
 
-.content .content-middle a:hover .a-border-bottom-left, .content .content-middle a:hover .a-border-bottom-right{
-	width: 40px;
-	background-color: #999;
+.content a:hover .a-border-bottom-left, .content a:hover .a-border-bottom-right{
+	width: 75px;
 } 
 
-.content .content-middle a:hover .a-border-left , .content .content-middle a:hover .a-border-right{
+.content a:hover .a-border-left , .content a:hover .a-border-right{
 	height: 50px;
-	background-color: #999;
 } 
 
 .a-border-top{
 	position: absolute;
+	display: block;
 	left: 50%;
 	top: 0;
 	width: 20px;
 	margin-left: -10px;
 	height: 1px;
 	background-color: #999;
-	transition: all 0.1s linear ;
+	transition: width 0.3s linear , left 0.3s linear ,margin-left 0.3s linear;
 }
 
 .a-border-bottom-left{
 	position: absolute;
+	display: block;
 	left: 0;
 	bottom: 0;
 	width: 0;
 	height: 1px;
-	transition: all 0.5s linear ;
+	background-color: #999;
+	transition: width 0.5s linear ;
 }
 
 .a-border-bottom-right{
 	position: absolute;
+	display: block;
 	right: 0;
 	bottom: 0;
 	width: 0;
 	height: 1px;
-	transition: all 0.5s linear ;
+	background-color: #999;
+	transition: width 0.5s linear ;
 }
 
 .a-border-left{
 	position: absolute;
+	display: block;
 	left: 0;
 	top: 0;
 	height: 0;
 	width: 1px;
-	transition: all 0.5s linear ;
+	background-color: #999;
+	transition: height 0.5s linear ;
 }
 
 .a-border-right{
 	position: absolute;
+	display: block;
 	right: 0;
 	top: 0;
 	height: 0;
 	width: 1px;
-	transition: all 0.5s linear ;
+	background-color: #999;
+	transition: height 0.5s linear ;
 }
+
+.content-bottom div {
+	position: relative;
+	width: 800px;
+	height: 336px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.content-bottom div img {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s linear;
+	cursor: pointer;
+}
+
+.content-bottom div img:hover {
+	width: 75%;
+	z-index: 1002;
+	height: 450px;
+}
+
+.content-bottom div .left-img {
+	left: 0;
+	top: 0;
+}
+
+.content-bottom div .left-img:hover+.left-title{
+	right: 25%;
+	z-index: 1003;
+}
+
+.content-bottom div .right-img:hover+.right-title{
+	left: 25%;
+	z-index: 1003;
+}
+
+.content-bottom div .right-img {
+	right: 0;
+	top: 0;
+}
+
+.content-bottom .left-title {
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	margin-top: -40px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	color: #fff;
+	width: 200px;
+	background-color: #39322F;
+	opacity: 0.8;
+	z-index: 1001;
+	transition: all 0.5s linear;
+}
+
+.content-bottom .right-title {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -40px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	color: #fff;
+	width: 200px;
+	background-color: #39322F;
+	opacity: 0.8;
+	z-index: 1001;
+	transition: all 0.5s linear;
+}
+
+.footer {
+	height: 150px;
+	width: 100%;
+	margin-top: 30px;
+	padding-top: 1px;
+	background-color: #4D4D4D;
+}
+
+.footer div {
+	float: left;
+	width:50%;
+	height: 100%;
+}
+
+.footer .footer-logo {
+	background:url("../img/footer-logo.png") no-repeat center center;
+	background-size: 120px 120px;
+}
+
+.footer .detail-info {
+	height: 103px;
+	margin-top: 28px;
+	color: #fff;
+}
+
+.detail-info h2 {
+ 	height: 30px;
+ 	line-height: 30px;
+ 	font-size: 20px;
+ 	font-weight: normal;
+}
+ .detail-info li span {
+ 	display: inline-block;
+ 	width: 408px;
+ 	height: 25px;
+ 	line-height: 25px;
+ 	font-size: 16px;
+ }
