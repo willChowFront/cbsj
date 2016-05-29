@@ -1,0 +1,113 @@
+body *{
+	font-family: Conv_Whitney-Light,Arial;
+	color: #737070;
+}
+
+.header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+	border-bottom: 1px solid #bbb;
+	/*background-color: #999;
+	opacity: 0.5;*/
+}
+
+.header .logo {
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	background:url("../img/logo.png") no-repeat 0 0;
+	background-size: 120px 120px;
+	text-indent: -2000px;
+}
+
+.header .room-reservation {
+	position: absolute;
+	right: 15%;
+	top: 10%;
+	font-size: 18px;
+	color: #bbb;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #bbb;	
+}
+
+.header .room-reservation:hover{
+	text-decoration: none;
+}
+
+.header ul {
+	height: 45px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.header ul li {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width: 150px;
+}
+
+.header ul li a {
+	display:inline-block;
+	color:#bbb;
+	font-size: 16px;
+}
+
+.header ul li .active {
+	position: relative;
+	color:#fff;
+}
+
+.header ul li .active:after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 15px;
+	position: absolute;
+	left: 50%;
+	bottom: -13px;
+	background-color: #fff;
+}
+
+.footer {
+	height: 150px;
+	width: 100%;
+	margin-top: 30px;
+	padding-top: 1px;
+	background-color: #4D4D4D;
+}
+
+.footer div {
+	float: left;
+	width:50%;
+	height: 100%;
+}
+
+.footer .footer-logo {
+	background:url("../img/footer-logo.png") no-repeat center center;
+	background-size: 120px 120px;
+}
+
+.footer .detail-info {
+	height: 103px;
+	margin-top: 28px;
+	color: #fff;
+}
+
+.detail-info h2 {
+ 	height: 30px;
+ 	line-height: 30px;
+ 	font-size: 20px;
+ 	font-weight: normal;
+}
+ .detail-info li span {
+ 	display: inline-block;
+ 	width: 408px;
+ 	height: 25px;
+ 	line-height: 25px;
+ 	font-size: 16px;
+ }
