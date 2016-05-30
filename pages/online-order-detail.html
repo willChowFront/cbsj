@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
 	<link rel="stylesheet" type="text/css" href="../resources/css/online-order.css">
 	<script type="text/javascript" src="../resources/js/jquery.js"></script>
+	<script type="text/javascript" src="../resources/js/laydate/laydate.js"></script>
+	<script type="text/javascript" src="../resources/js/layer/layer.js"></script>
 </head>
 <body>
 	<!--#include file="/pages/header.html"  -->
@@ -16,45 +18,121 @@
 			<img src="../resources/img/delete/online-top-bg.jpg">
 			<div class="sub-nav in-detail">
 				<div>
-					<a href="javascript:;">隐藏空房</a>
+					<a href="javascript:;" class="to-hide" isHidden="no">隐藏空房</a>
 				</div>
 			</div>
 		</div>
-		<ul class="room-show">
-			<li>
-				<div class="detail-img">
-					<img src="../resources/img/delete/u27.png">
-				</div>
-				<div class="detail-info">
-					<h1>双人间<br /><span>(面积20㎡)</span></h1>
-					<h2><span>CNY:1200.60/</span>每晚<em>含税费</em></h2>
-					<a href="javascript:;" class="sure-order">预定</a>
-				</div>
-			</li>
-			<li>
-				<div class="detail-img">
-					<img src="../resources/img/delete/u27.png">
-				</div>
-				<div class="detail-info">
-					<h1>双人间<br /><span>(面积20㎡)</span></h1>
-					<h2><span>CNY:1200.60/</span>每晚<em>含税费</em></h2>
-					<a href="javascript:;" class="no-room">已预定</a>
-				</div>
-			</li>
-			<li>
-				<div class="detail-img">
-					<img src="../resources/img/delete/u27.png">
-				</div>
-				<div class="detail-info">
-					<h1>双人间<br /><span>(面积20㎡)</span></h1>
-					<h2><span>CNY:1200.60/</span>每晚<em>含税费</em></h2>
-					<a href="javascript:;" class="sure-order">预定</a>
-				</div>
-			</li>
-		</ul>
+		<div class="clearfix">
+			<form class="calendar">
+				开始日：<input class="laydate-icon" id="start" name="startday" value="2016-06-01"> 
+				结束日：<input class="laydate-icon" id="end" name="endday" value="2016-06-02">
+				<button type="submit">查询</button>
+			</form>
+			<ul class="room-show">
+				<li>
+					<div class="detail-img">
+						<img src="../resources/img/delete/u27.png">
+					</div>
+					<div class="detail-info">
+						<h1>双人间<br /><span>(面积20㎡)</span></h1>
+						<h3><span>CNY:1200.60/</span>每晚<em>含税费</em></h3>
+						<a href="javascript:;" class="sure-order" roomId="3">预定</a>
+					</div>
+				</li>
+				<li class="no-room">
+					<div class="detail-img">
+						<img src="../resources/img/delete/u27.png">
+					</div>
+					<div class="detail-info">
+						<h1>双人间<br /><span>(面积20㎡)</span></h1>
+						<h3><span>CNY:1200.60/</span>每晚<em>含税费</em></h3>
+						<a href="javascript:;">已预定</a>
+					</div>
+				</li>
+				<li>
+					<div class="detail-img">
+						<img src="../resources/img/delete/u27.png">
+					</div>
+					<div class="detail-info">
+						<h1>双人间<br /><span>(面积20㎡)</span></h1>
+						<h3><span>CNY:1200.60/</span>每晚<em>含税费</em></h3>
+						<a href="javascript:;" class="sure-order" roomId="2">预定</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
 	</div>
 	<!--#include file="/pages/footer.html"  -->
 	<script type="text/javascript">
+		$('.to-hide').click(function(ev){
+			if($(ev.target).attr('isHidden') == 'no'){
+				$('.no-room').hide();
+				$(ev.target).attr('isHidden','yes');
+				$(ev.target).text('取消隐藏');
+			}else{
+				$('.no-room').show();
+				$(ev.target).attr('isHidden','no');
+				$(ev.target).text('隐藏空房');
+			}
+		});
+		var	min = $('#start').val() || laydate.now();
+		var start = {
+		    elem: '#start',
+		    format: 'YYYY-MM-DD',
+		    min: min, //设定最小日期为当前日期
+		    max: '2099-06-16 23:59:59', //最大日期
+		    istime: true,
+		    istoday: false,
+		    choose: function(datas){
+		         end.min = datas; //开始日选好后，重置结束日的最小日期
+		         end.start = datas //将结束日的初始值设定为开始日
+		    }
+		};
+		var end = {
+		    elem: '#end',
+		    format: 'YYYY-MM-DD',
+		    min: min,
+		    max: '2099-06-16 23:59:59',
+		    istime: true,
+		    istoday: false,
+		    choose: function(datas){
+		        start.max = datas; //结束日选好后，重置开始日的最大日期
+		    }
+		};
+		laydate(start);
+		laydate(end);
+		var
+			formHtml =  '<div>'+
+							'<span>开始日:</span><input name="startday"'+' value="'+ $('#start').val()+'" readonly="true" />'+
+						'</div>'+
+						'<div>'+
+							'<span>结束日:</span><input name="endday" value="'+$('#end').val()+'"  readonly="true"/>'+
+						'</div>'+
+						'<div>'+
+							'<span>姓名:</span><input name="">'+
+						'</div>'+
+						'<div>'+
+							'<span>电话号码:</span><input name="" class="telephone">'+
+						'</div>'+
+						'<div>'+
+							'<button type="submit">提交</button>'+
+						'</div>';
+		$('.sure-order').click(function(ev){
+			var
+				roomId = $(ev.target).attr('roomId'),
+				roomName = $(ev.target).prev().prev().text();
+
+			formHtml = '<form class="order-info">'+'<h1>'+roomName+'<h1/>'+formHtml;
+			formHtml = formHtml + '<input type=hidden value='+roomId+'name="roomId"/></form>',
+			layer.open({
+			  type: 1,
+			  skin: 'layui-layer-rim', 
+			  area: ['600px', '430px'], 
+			  content: formHtml
+			});
+		})
+		
 	</script>
 </body>
 </html>

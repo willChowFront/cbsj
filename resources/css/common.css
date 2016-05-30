@@ -108,10 +108,11 @@ body *{
  	font-size: 20px;
  	font-weight: normal;
 }
+
 .footer .detail-info li span {
  	display: inline-block;
  	width: 408px;
  	height: 25px;
  	line-height: 25px;
  	font-size: 16px;
- }
+}
