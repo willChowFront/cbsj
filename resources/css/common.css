@@ -3,6 +3,10 @@ body *{
 	color: #737070;
 }
 
+.none {
+	display: none;
+}
+
 .header {
 	position: absolute;
 	left: 0;
@@ -98,13 +102,13 @@ body *{
 	color: #fff;
 }
 
-.detail-info h2 {
+.footer .detail-info h2 {
  	height: 30px;
  	line-height: 30px;
  	font-size: 20px;
  	font-weight: normal;
 }
- .detail-info li span {
+.footer .detail-info li span {
  	display: inline-block;
  	width: 408px;
  	height: 25px;
