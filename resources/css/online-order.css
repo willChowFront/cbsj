@@ -234,6 +234,7 @@
 
 .calendar input {
 	width: 240px;
+	border: 1px solid #999;
 }
 
 .calendar button {
@@ -279,6 +280,7 @@
 	line-height: 40px;
 	font-size: 16px;
 	text-align: left;
+	border: 1px solid #999;
 }
 
 .order-info div button {
