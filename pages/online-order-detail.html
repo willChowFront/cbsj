@@ -102,8 +102,12 @@
 		};
 		laydate(start);
 		laydate(end);
-		var
-			formHtml =  '<div>'+
+		
+		var 
+			index;//弹出层的序号
+		$('.sure-order').click(function(ev){
+			var
+				formHtml =  '<div>'+
 							'<span>开始日:</span><input name="startday"'+' value="'+ $('#start').val()+'" readonly="true" />'+
 						'</div>'+
 						'<div>'+
@@ -117,14 +121,10 @@
 						'</div>'+
 						'<div>'+
 							'<button type="submit">提交</button>'+
-						'</div>';
-		var 
-			index;//弹出层的序号
-		$('.sure-order').click(function(ev){
-			var
+						'</div>',
 				roomId = $(ev.target).attr('roomId'),
 				roomName = $(ev.target).prev().prev().text();
-
+			
 			formHtml = '<form class="order-info" id="J_orderInfo">'+'<h1>'+roomName+'<h1/>'+formHtml;
 			formHtml = formHtml + '<input type=hidden value="'+roomId+'" name="roomId"/></form>',
 			index = layer.open({
