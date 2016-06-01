@@ -27,7 +27,7 @@
 }
 
 .content .sub-nav div {
-	width: 600px;
+	width: 400px;
 	margin: 0 auto;
 } 
 
@@ -43,6 +43,11 @@
 }
 
 .content .sub-nav div a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.content .sub-nav div .current-position{
 	text-decoration: none;
 	color: #000;
 }
@@ -74,10 +79,19 @@
 }
 
 .content .content-middle p , .content .content-bottom p{
-	width: 100%;
-	text-align: center;
+	width: 800px;
+	margin: 0 auto;
+	text-align: justify;
 	font-size: 16px;
 	color: #999;
+}
+
+.content .content-middle h4{
+	width: 800px;
+	margin: 20px auto 10px;
+	text-align: justify;
+	font-size: 14px;
+	color: #000;
 }
 
 .content  a {

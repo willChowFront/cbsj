@@ -1,0 +1,22 @@
+/*联系我们页面css*/
+.content h1 {
+	font-size:46px;
+	width: 100%;
+	margin-top: 200px;
+	margin-bottom: 40px;
+	text-align: center;
+	color: #999;
+}
+
+.content ul {
+	width: 100%;
+}
+
+.content ul li {
+	width: 100%;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	color: #999;
+}
