@@ -78,6 +78,10 @@
 	margin-bottom: 20px;
 }
 
+.content .culture-content img {
+	height: 500px;
+}
+
 .content .content-middle p , .content .content-bottom p{
 	width: 800px;
 	margin: 0 auto;

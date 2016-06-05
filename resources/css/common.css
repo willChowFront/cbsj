@@ -1,5 +1,5 @@
 body *{
-	font-family: Conv_Whitney-Light,Arial;
+	/*font-family: Conv_Whitney-Light,Arial;*/
 	color: #737070;
 }
 
@@ -63,7 +63,7 @@ body *{
 
 .header ul li .active {
 	position: relative;
-	color:#fff;
+	color:#666;
 }
 
 .header ul li .active:after {
@@ -74,7 +74,7 @@ body *{
 	position: absolute;
 	left: 50%;
 	bottom: -13px;
-	background-color: #fff;
+	background-color: #666;
 }
 
 .footer {

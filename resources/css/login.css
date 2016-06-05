@@ -1,0 +1,45 @@
+/*登录页css*/
+.login-form {
+	width: 674px;
+	margin: 40px auto;
+	margin-top: 200px;
+}
+
+.login-form h1 {
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+}
+
+.login-form div {
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+.login-form div span {
+	float: left;
+	width: 64px;
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+}
+
+.login-form div input {
+	float: right;
+	width: 580px;
+	height: 40px;
+	border: 1px solid #999;
+}
+
+.login-form button {
+	float: right;
+	width: 580px;
+	height: 40px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #fff;
+	background-color: #9f8769;
+	cursor: pointer;
+	border: 1px solid #9f8769;
+}

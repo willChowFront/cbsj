@@ -36,7 +36,7 @@
 					<div class="detail-info">
 						<h1>双人间<br /><span>(面积20㎡)</span></h1>
 						<h3><span>CNY:1200.60/</span>每晚<em>含税费</em></h3>
-						<a href="javascript:;" class="sure-order" roomId="3">预定</a>
+						<a href="javascript:;" class="sure-order" roomId="3" themeId="1">预定</a>
 					</div>
 				</li>
 				<li class="no-room">
@@ -56,7 +56,7 @@
 					<div class="detail-info">
 						<h1>双人间<br /><span>(面积20㎡)</span></h1>
 						<h3><span>CNY:1200.60/</span>每晚<em>含税费</em></h3>
-						<a href="javascript:;" class="sure-order" roomId="2">预定</a>
+						<a href="javascript:;" class="sure-order" roomId="2" themeId="1">预定</a>
 					</div>
 				</li>
 			</ul>
@@ -104,6 +104,7 @@
 		laydate(end);
 		
 		var 
+			isSuccess = false,//是否预定成功
 			index;//弹出层的序号
 		$('.sure-order').click(function(ev){
 			var
@@ -123,10 +124,12 @@
 							'<button type="submit">提交</button>'+
 						'</div>',
 				roomId = $(ev.target).attr('roomId'),
+				themeId = $(ev.target).attr('themeId'),
 				roomName = $(ev.target).prev().prev().text();
 			
 			formHtml = '<form class="order-info" id="J_orderInfo">'+'<h1>'+roomName+'<h1/>'+formHtml;
-			formHtml = formHtml + '<input type=hidden value="'+roomId+'" name="roomId"/></form>',
+			formHtml = formHtml + '<input type=hidden value="'+themeId+'" name="themeId"/>';
+			formHtml = formHtml + '<input type=hidden value="'+roomId+'" name="roomId"/></form>';
 			index = layer.open({
 			  type: 1,
 			  skin: 'layui-layer-rim', 
@@ -152,9 +155,11 @@
 				$.ajax({
 					type:'get',
 					url:'/mock/succeed.json',
-					data:param
+					data:param,
+					dataType:'json' 
 				}).done(function(msg){
 					 if(msg.code == 0){
+					 	isSuccess = true;
 					 	layer.close(index);
 					 	layer.open({
 						  type: 1,
@@ -179,12 +184,18 @@
 			
 		});
 
+		$(document).on('click','.layui-layer-close',function(ev){
+			if(isSuccess){
+				window.location.reload();
+			}
+		});
+
 		$(document).on('focus', 'input' ,function (ev) {
 			 $(ev.target).css('border-color','#999');
 			 if($(ev.target).hasClass('telephone')){
 			 	$(ev.target).val('');
 			 }
-		})
+		});
 		
 	</script>
 </body>
