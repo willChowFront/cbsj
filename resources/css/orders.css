@@ -1,0 +1,78 @@
+/*订单页css*/
+.content {
+	width: 100%;
+	margin-top: 166px;
+}
+
+.content .sub-nav {
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	line-height: 60px;
+	background-color: #E4E4E4;
+	opacity: 0.8;
+}
+
+.content .sub-nav div {
+	width: 420px;
+	margin: 0 auto;
+} 
+
+.content .in-detail div {
+	width: 200px;
+}
+
+.content .sub-nav div a {
+	display: inline-block;
+	width: 195px;
+	height: 30px;
+	line-height: 30px;
+	color: #737070;
+	font-size: 16px;
+	text-align: center;
+	border-right: 1px solid #bbb;
+}
+
+.content .sub-nav div a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.content .sub-nav div a:last-child {
+	border-right:none; 
+}
+
+.content form {
+	width: 800px;
+	margin:20px auto;
+}
+
+.content form button {
+	float: right;
+	width: 100px;
+	height: 24px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	background-color: #9f8769;
+	cursor: pointer;
+	border: 1px solid #9f8769;
+}
+
+.content .order-list {
+	width: 1000px;
+	margin:20px auto;
+}
+
+.content .order-list th {
+	font-size: 18px;
+	padding: 10px;
+	border: 1px solid #999;
+	text-align: center;
+}
+
+.content .order-list td{
+	padding: 10px;
+	border: 1px solid #999;
+	text-align: center;
+}

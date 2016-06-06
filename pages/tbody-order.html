@@ -1,0 +1,134 @@
+<!--今日提交订单-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>今日提交订单页</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/orders.css">
+	<script type="text/javascript" src="../resources/js/jquery.js"></script>
+	<script type="text/javascript" src="../resources/js/laydate/laydate.js"></script>
+</head>
+<body>
+	<!--#include file="/pages/header.html"  -->
+	<div class="content">
+		<div class="sub-nav">
+			<div>
+				<a href="orders.html">今日订单</a>
+				<a href="tbody-order.html">今日提交订单</a>
+			</div>
+		</div>
+		<div class="clearfix">
+			<form class="calendar">
+				开始日：<input class="laydate-icon" id="start" name="startday" value="2016-06-01"> 
+				结束日：<input class="laydate-icon" id="end" name="endday" value="2016-06-02">
+				<button type="submit">查询</button>
+			</form>
+			<table class="order-list">
+				<thead>
+					<thead>
+						<tr>
+							<th>姓名</th>
+							<th>入住日期</th>
+							<th>结束日期</th>
+							<th>提交日期</th>
+							<th>电话</th>
+							<th>价格</th>
+							<th>备注</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>赵凯康</td>
+							<td>2016-06-06</td>
+							<td>2016-06-07</td>
+							<td>2016-06-01</td>
+							<td>15654454545</td>
+							<td>255元</td>
+							<td>重要客人</td>
+						</tr>
+						<tr>
+							<td>赵凯康</td>
+							<td>2016-06-06</td>
+							<td>2016-06-07</td>
+							<td>2016-06-01</td>
+							<td>15654454545</td>
+							<td>255元</td>
+							<td>重要客人</td>
+						</tr>
+						<tr>
+							<td>赵凯康</td>
+							<td>2016-06-06</td>
+							<td>2016-06-07</td>
+							<td>2016-06-01</td>
+							<td>15654454545</td>
+							<td>255元</td>
+							<td>重要客人</td>
+						</tr>
+						<tr>
+							<td>赵凯康</td>
+							<td>2016-06-06</td>
+							<td>2016-06-07</td>
+							<td>2016-06-01</td>
+							<td>15654454545</td>
+							<td>255元</td>
+							<td>重要客人</td>
+						</tr>
+						<tr>
+							<td>赵凯康</td>
+							<td>2016-06-06</td>
+							<td>2016-06-07</td>
+							<td>2016-06-01</td>
+							<td>15654454545</td>
+							<td>255元</td>
+							<td>重要客人</td>
+						</tr>
+						<tr>
+							<td>赵凯康</td>
+							<td>2016-06-06</td>
+							<td>2016-06-07</td>
+							<td>2016-06-01</td>
+							<td>15654454545</td>
+							<td>255元</td>
+							<td>重要客人</td>
+						</tr>
+					</tbody>
+				</thead>
+			</table> 
+		</div>
+		
+	</div>
+	<!--#include file="/pages/footer.html"  -->
+	<script type="text/javascript">
+		
+		var	min = laydate.now();
+		var start = {
+		    elem: '#start',
+		    format: 'YYYY-MM-DD',
+		    min: min, //设定最小日期为当前日期
+		    max: '2099-06-16 23:59:59', //最大日期
+		    istime: true,
+		    istoday: false,
+		    choose: function(datas){
+		         end.min = datas; //开始日选好后，重置结束日的最小日期
+		         end.start = datas //将结束日的初始值设定为开始日
+		    }
+		};
+		var end = {
+		    elem: '#end',
+		    format: 'YYYY-MM-DD',
+		    min: min,
+		    max: '2099-06-16 23:59:59',
+		    istime: true,
+		    istoday: false,
+		    choose: function(datas){
+		        start.max = datas; //结束日选好后，重置开始日的最大日期
+		    }
+		};
+		laydate(start);
+		laydate(end);
+
+	</script>
+</body>
+</html>
