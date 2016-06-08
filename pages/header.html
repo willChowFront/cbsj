@@ -1,5 +1,6 @@
 <!-- header公共模块 -->
-<div class="header">
+<script type="text/javascript" src="../resources/js/jquery.js"></script>
+<div class="header" id="J_header">
 	<a href="index.html" class="logo">长白山居</a>
 	<a href="javascript:;" class="room-reservation">客房预订</a>
 	<ul>
@@ -9,3 +10,19 @@
 		<li><a href="contact-us.html">联系我们</a></li>
 	</ul>
 </div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		console.log($('').offset());
+  		$(window).scroll(function(ev){
+			if($(document).scrollTop() > 370){
+				$('#J_subNav').addClass('fixed-sub');
+				$('#J_header').addClass('fixed-header');
+			}else{
+				if($('#J_subNav').hasClass('fixed-sub')){
+					$('#J_subNav').removeClass('fixed-sub');
+					$('#J_header').removeClass('fixed-header');
+				}
+			}
+		});
+	});
+</script>

@@ -8,20 +8,19 @@ body *{
 }
 
 .header {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
 	z-index: 10000;
 	border-bottom: 1px solid #bbb;
-	/*background-color: #999;
-	opacity: 0.5;*/
+	height: 175px;
 }
 
 .header .logo {
 	display: block;
 	width: 120px;
-	height: 120px;
+	height: 68%;
 	margin: 0 auto;
 	background:url("../img/logo.png") no-repeat 0 0;
 	background-size: 120px 120px;
@@ -33,7 +32,7 @@ body *{
 	right: 15%;
 	top: 10%;
 	font-size: 18px;
-	color: #bbb;
+	color: #666;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #bbb;	
 }
@@ -43,7 +42,7 @@ body *{
 }
 
 .header ul {
-	height: 45px;
+	height: 32%;
 	width: 600px;
 	margin: 0 auto;
 }
@@ -64,6 +63,7 @@ body *{
 .header ul li .active {
 	position: relative;
 	color:#666;
+	font-size: bold;
 }
 
 .header ul li .active:after {
@@ -73,7 +73,7 @@ body *{
 	height: 15px;
 	position: absolute;
 	left: 50%;
-	bottom: -13px;
+	bottom: -24px;
 	background-color: #666;
 }
 
@@ -115,4 +115,34 @@ body *{
  	height: 25px;
  	line-height: 25px;
  	font-size: 16px;
+}
+
+.fixed-header {
+	background-color:#fff; 
+	box-shadow: 0 3px 3px 1px rgba(176,175,175,.2);
+	border-bottom-color:#F8F8F8;
+	height: 140px;
+	transition: all .5s ease-out 0s; 
+	z-index: 10000; 
+}
+
+.fixed-header ul li .active:after {
+	bottom: -14px;
+}
+
+.content .fixed-sub {
+	position: fixed;
+	top: 140px;
+	left: 0;
+	height: 45px;
+	line-height: 45px;
+	transition: all .5s ease-out 0s;
+	z-index: 10000; 
+}
+
+.content .fixed-sub a {
+	height: 45px;
+	line-height: 45px;
+	margin-top: 0;
+	transition: all .5s ease-out 0s; 
 }
