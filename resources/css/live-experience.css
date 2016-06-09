@@ -1,0 +1,28 @@
+/*住享体验css*/ 
+
+.content .content-middle > div {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.content .content-middle div img {
+	float: left;
+	width: 439px;
+	height: 260px;
+}
+
+.content  .content-middle div div {
+	float: left;
+	width: 361px;
+}
+
+.content  .content-middle div div p {
+	width: 300px;
+	text-align: center;
+}
+
+.content  .content-middle div div h4 {
+	width: 300px;
+	text-align: center;
+}

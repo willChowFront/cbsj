@@ -39,14 +39,14 @@
 						<a href="javascript:;" class="sure-order" roomId="3" themeId="1">预定</a>
 					</div>
 				</li>
-				<li class="no-room">
+				<li id="J_noRoom">
 					<div class="detail-img">
 						<img src="../resources/img/delete/u27.png">
 					</div>
 					<div class="detail-info">
 						<h1>双人间<br /><span>(面积20㎡)</span></h1>
 						<h3><span>CNY:1200.60/</span>每晚<em>含税费</em></h3>
-						<a href="javascript:;">已预定</a>
+						<a href="javascript:;" class="no-room">已预定</a>
 					</div>
 				</li>
 				<li>
@@ -67,11 +67,11 @@
 	<script type="text/javascript">
 		$('.to-hide').click(function(ev){
 			if($(ev.target).attr('isHidden') == 'no'){
-				$('.no-room').hide();
+				$('#J_noRoom').hide();
 				$(ev.target).attr('isHidden','yes');
 				$(ev.target).text('取消隐藏');
 			}else{
-				$('.no-room').show();
+				$('#J_noRoom').show();
 				$(ev.target).attr('isHidden','no');
 				$(ev.target).text('隐藏空房');
 			}
@@ -108,11 +108,11 @@
 			index;//弹出层的序号
 		$('.sure-order').click(function(ev){
 			var
-				formHtml =  '<div>'+
-							'<span>开始日:</span><input name="startday"'+' value="'+ $('#start').val()+'" readonly="true" />'+
+				formHtml =  '<div class="one-row">'+
+							'<span>开始日期:</span><input name="startday"'+' value="'+ $('#start').val()+'" readonly="true" />'+
 						'</div>'+
-						'<div>'+
-							'<span>结束日:</span><input name="endday" value="'+$('#end').val()+'"  readonly="true"/>'+
+						'<div class="one-row">'+
+							'<span>结束日期:</span><input name="endday" value="'+$('#end').val()+'"  readonly="true"/>'+
 						'</div>'+
 						'<div>'+
 							'<span>姓名:</span><input name="userName" class="user-name">'+
@@ -125,9 +125,9 @@
 						'</div>',
 				roomId = $(ev.target).attr('roomId'),
 				themeId = $(ev.target).attr('themeId'),
-				roomName = $(ev.target).prev().prev().text();
+				roomName = $(ev.target).prev().prev().text() + $(ev.target).prev().text();
 			
-			formHtml = '<form class="order-info" id="J_orderInfo">'+'<h1>'+roomName+'<h1/>'+formHtml;
+			formHtml = '<form class="order-info clearfix" id="J_orderInfo">'+'<h1>'+roomName+'</h1>'+formHtml;
 			formHtml = formHtml + '<input type=hidden value="'+themeId+'" name="themeId"/>';
 			formHtml = formHtml + '<input type=hidden value="'+roomId+'" name="roomId"/></form>';
 			index = layer.open({
