@@ -78,6 +78,21 @@
 	margin-bottom: 20px;
 }
 
+.content .content-middle .flexslider {
+	width: 800px;
+	height: 336px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.content .content-middle .flexslider li {
+	width: 800px;
+	height: 336px;
+	margin: 0;
+
+}
+
 .content .culture-content img {
 	height: 500px;
 }
@@ -199,7 +214,7 @@
 	width: 50%;
 	height: 100%;
 	z-index: 1;
-	transition: all 0.5s ease-out;
+	transition: all 0.1s ease-out;
 	cursor: pointer;
 }
 
@@ -284,7 +299,7 @@
 
 .content-bottom .left-title a {
 	float: right;
-	transition: all 0.5s ease-out;
+	transition: all 0.1s ease-out;
 	height: 80px;
 	line-height: 80px;
 	width: 200px;
@@ -297,7 +312,7 @@
 	width: 0;
 	z-index: 1003;
 	color: #fff;
-	transition: all 0s ease-out;
+	transition: all 0.1s ease-out;
 }
 
 .content-bottom .right-title {
@@ -315,7 +330,7 @@
 
 .content-bottom .right-title a {
 	float: right;
-	transition: all 0.5s ease-out;
+	transition: all 0.1s ease-out;
 	height: 80px;
 	line-height: 80px;
 	width: 200px;
@@ -328,6 +343,6 @@
 	width: 0;
 	z-index: 1003;
 	color: #fff;
-	transition: all 0.5s ease-out;
+	transition: all 0.1s ease-out;
 }
 

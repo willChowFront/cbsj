@@ -63,7 +63,7 @@ body *{
 .header ul li .active {
 	position: relative;
 	color:#666;
-	font-size: bold;
+	font-size: 18px;
 }
 
 .header ul li .active:after {

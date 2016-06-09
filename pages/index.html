@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../resources/css/index.css">
 	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/flexslider.css">
 </head>
 <body>
 	<!--#include file="/pages/header.html"  -->
@@ -22,7 +23,22 @@
 		</div>
 		<div class="content-middle">
 			<h1>中国·长白山</h1>
-			<img src="../resources/img/delete/u32.jpg">
+			<div class="flexslider">
+		      <ul class="slides">
+		        <li>
+		       		<img src="../resources/img/delete/u32.jpg">
+		        </li>
+		        <li>
+		         	<img src="../resources/img/delete/u38.jpg">
+		        </li>
+		        <li>
+		          <img src="../resources/img/delete/u78.png">
+		        </li>
+		        <li>
+		          <img src="../resources/img/delete/u59.jpg">
+		        </li>
+		      </ul>
+		    </div>
 			<p>“千年积雪为年松，直上人间第一峰”。来到这里，开启一次奇妙的旅程。神秘的长白山脚下，竟隐藏着这样一座别样的民宿。没有目的，没有所谓的净化心灵放空自己，没有所谓的逃避世俗隐居山林。这里处处是随意的，处处</p>
 			<p>是生活的。</p>
 			<a href="online-order.html" class="common-a"><span class="a-border-top"></span ><span class="a-border-right"></span>预订客房<span class="a-border-bottom-left"></span><span class="a-border-bottom-right"></span><span class="a-border-left"></span></a>
@@ -46,5 +62,16 @@
 		</div>
 	</div>
 	<!--#include file="/pages/footer.html"  -->
+	<script src="../resources/js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).load(function() {
+			  $('.flexslider').flexslider({
+			    animation: "slide"
+			  });
+			});
+		})
+		
+	</script>
 </body>
 </html>
