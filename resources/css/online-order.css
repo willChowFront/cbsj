@@ -1,4 +1,4 @@
-<!-- 在线预订页css -->
+ 在线预订页css -->
 .content {
 	width: 100%;
 }
@@ -141,21 +141,34 @@
 }
 
 .room-show {
-	width: 800px;
+	width: 890px;
 	margin: 0 auto;
 }
 
 .room-show li {
-	height: 266px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin-bottom: 40px;
 	border-bottom:1px solid #ccc;
 }
 
+.room-show li h1 {
+	color: #9f8769;
+	text-align: right;
+	font-size:31px;
+	font-weight: normal;	
+}
+
+.room-show li p {
+	text-align: justify;
+	margin-top: 10px;
+}
+
 .room-show li .detail-img{
 	width: 436px;
+	height: 266px;
 	float: left;
+	overflow: hidden;
 }
 
 .room-show .detail-img img{
@@ -164,16 +177,23 @@
 }
 
 .room-show li .detail-info {
-	width: 300px;
+	width: 400px;
 	float: right;
 }
 
-.detail-info h1 {
-	color: #9f8769;
+.room-show .detail-info .info-table{
+	float: right;
+	width: 300px;
+	margin: 10px 0;
+}
+
+
+.room-show .detail-info .info-table span {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	width: 146px;
 	text-align: right;
-	font-size: 46px;
-	font-weight: normal;
-	margin-bottom: 30px;	
 }
 
 .detail-info h1 span {
@@ -184,33 +204,34 @@
 
 .detail-info h3{
 	font-weight: normal;
-	font-size: 34px;
+	font-size: 32px;
 	text-align: right;
-	margin-bottom: 30px;
+	margin: 20px 0;
 }
 
 .detail-info h3 span {
 	color: #9f8769;
-	text-align: right;
 }
 
 .detail-info h3 em {
-	display: block;
+	display: block; 
 	color: #737070;
 	font-size: 26px;
-	text-align: right;
+	
 }
 
-
 .sure-order {
-	float: right;
+	clear: both;
+	display: block;
 	width: 110px;
 	height: 40px;
 	line-height: 40px;
+	margin: 0 auto;
 	text-align: center;
 	font-size: 12px;
 	color: #fff;
 	background-color: #9f8769;
+	float: right;
 }
 
 .sure-order:hover {

@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
 	<link rel="stylesheet" type="text/css" href="../resources/css/online-order.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/flexslider.css">
 	<script type="text/javascript" src="../resources/js/jquery.js"></script>
 	<script type="text/javascript" src="../resources/js/laydate/laydate.js"></script>
 	<script type="text/javascript" src="../resources/js/layer/layer.js"></script>
@@ -30,34 +31,99 @@
 			</form>
 			<ul class="room-show">
 				<li>
-					<div class="detail-img">
-						<img src="../resources/img/delete/u27.png">
+					<div class="clearfix">
+						<div class="flexslider detail-img">
+					      <ul class="slides">
+					        <li>
+					       		<img src="../resources/img/delete/u27.png">
+					        </li>
+					        <li>
+					         	<img src="../resources/img/delete/u38.jpg">
+					        </li>
+					        <li>
+					          <img src="../resources/img/delete/u78.png">
+					        </li>
+					        <li>
+					          <img src="../resources/img/delete/u59.jpg">
+					        </li>
+					      </ul>
+					    </div>
+						<div class="detail-info">
+							<h1>长白山北坡时尚舒适1卧公寓</h1>
+							<div class="info-table">
+								<span>可住：4人</span>
+								<span>空调：无</span>
+								<span>宽带：无</span>
+								<span>电视：有</span>
+							</div>
+							<h3><span>CNY:120.60/</span>每晚<em>含税费</em></h3>
+							<a href="javascript:;" class="sure-order" roomId="3" themeId="1">预定</a>
+						</div>
 					</div>
-					<div class="detail-info">
-						<h1>双人间<br /><span>(面积20㎡)</span></h1>
-						<h3><span>CNY:1200.60/</span>每晚<em>含税费</em></h3>
-						<a href="javascript:;" class="sure-order" roomId="3" themeId="1">预定</a>
-					</div>
+					<p>公寓位于长白山保护开发区池北区天福街，宽敞明亮，设施齐全，环境温馨。可容纳4人居住（有小炕）。</p>
 				</li>
 				<li id="J_noRoom">
-					<div class="detail-img">
-						<img src="../resources/img/delete/u27.png">
+					<div class="clearfix">
+						<div class="flexslider detail-img">
+					      <ul class="slides">
+					        <li>
+					       		<img src="../resources/img/delete/u27.png">
+					        </li>
+					        <li>
+					         	<img src="../resources/img/delete/u38.jpg">
+					        </li>
+					        <li>
+					          <img src="../resources/img/delete/u78.png">
+					        </li>
+					        <li>
+					          <img src="../resources/img/delete/u59.jpg">
+					        </li>
+					      </ul>
+					    </div>
+						<div class="detail-info">
+							<h1>长白山北坡时尚舒适1卧公寓</h1>
+							<div class="info-table">
+								<span>可住：4人</span>
+								<span>空调：无</span>
+								<span>宽带：无</span>
+								<span>电视：有</span>
+							</div>
+							<h3><span>CNY:120.60/</span>每晚<em>含税费</em></h3>
+							<a href="javascript:;"  class="no-room">已预定</a>
+						</div>
 					</div>
-					<div class="detail-info">
-						<h1>双人间<br /><span>(面积20㎡)</span></h1>
-						<h3><span>CNY:1200.60/</span>每晚<em>含税费</em></h3>
-						<a href="javascript:;" class="no-room">已预定</a>
+					<p>公寓位于长白山保护开发区池北区天福街，宽敞明亮，设施齐全，环境温馨。可容纳4人居住（有小炕）。</p>
+				</li><li>
+					<div class="clearfix">
+						<div class="flexslider detail-img">
+					      <ul class="slides">
+					        <li>
+					       		<img src="../resources/img/delete/u27.png">
+					        </li>
+					        <li>
+					         	<img src="../resources/img/delete/u38.jpg">
+					        </li>
+					        <li>
+					          <img src="../resources/img/delete/u78.png">
+					        </li>
+					        <li>
+					          <img src="../resources/img/delete/u59.jpg">
+					        </li>
+					      </ul>
+					    </div>
+						<div class="detail-info">
+							<h1>长白山北坡时尚舒适1卧公寓</h1>
+							<div class="info-table">
+								<span>可住：4人</span>
+								<span>空调：无</span>
+								<span>宽带：无</span>
+								<span>电视：有</span>
+							</div>
+							<h3><span>CNY:120.60/</span>每晚<em>含税费</em></h3>
+							<a href="javascript:;" class="sure-order" roomId="3" themeId="1">预定</a>
+						</div>
 					</div>
-				</li>
-				<li>
-					<div class="detail-img">
-						<img src="../resources/img/delete/u27.png">
-					</div>
-					<div class="detail-info">
-						<h1>双人间<br /><span>(面积20㎡)</span></h1>
-						<h3><span>CNY:1200.60/</span>每晚<em>含税费</em></h3>
-						<a href="javascript:;" class="sure-order" roomId="2" themeId="1">预定</a>
-					</div>
+					<p>公寓位于长白山保护开发区池北区天福街，宽敞明亮，设施齐全，环境温馨。可容纳4人居住（有小炕）。</p>
 				</li>
 			</ul>
 		</div>
@@ -125,7 +191,7 @@
 						'</div>',
 				roomId = $(ev.target).attr('roomId'),
 				themeId = $(ev.target).attr('themeId'),
-				roomName = $(ev.target).prev().prev().text() + $(ev.target).prev().text();
+				roomName = $(ev.target).prev().prev().prev().text();
 			
 			formHtml = '<form class="order-info clearfix" id="J_orderInfo">'+'<h1>'+roomName+'</h1>'+formHtml;
 			formHtml = formHtml + '<input type=hidden value="'+themeId+'" name="themeId"/>';
@@ -196,6 +262,18 @@
 			 	$(ev.target).val('');
 			 }
 		});
+		
+	</script>
+
+	<script src="../resources/js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).load(function() {
+			  $('.flexslider').flexslider({
+			    animation: "slide"
+			  });
+			});
+		})
 		
 	</script>
 </body>
