@@ -6,10 +6,12 @@
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link rel="stylesheet" type="text/css" href="./css/index.css">
   <link rel="stylesheet" type="text/css" href="./css/common.css">
+  <link rel="stylesheet" type="text/css" href="./css/flexslider.css">
+  <script src="./js/jquery.js"></script>
 </head>
 <body>
     <div class="header">
-      <a href="index.html" class="logo">四平市平方通信有限公司</a>
+      <a href="index.html" class="logo">四平市四方通信有限公司</a>
       <ul class="nav clearfix">
           <li>
               <a href="index.html" class="active">首页</a>
@@ -101,17 +103,89 @@
                     <em>PROFILE</em>
                 </h1>
                 <p>
-                    四平市平方通信有限公司 ，主要致力于通信行业的信息服务、电子产品销售、电信业务代理代办、 电子商务等业务。公司的经营理念是:“合作、共赢、努力、创新、发展”。公司成立以来，以一支技术精湛的服务团队， 以卓越的服务品质、专业的服务实力，为不同群体的用户提供更高更优质的服务。凭借多年的行业运营经验， 依托强大的通信市场布局和销售网络覆盖，遵循“优质、高效、团结、奉献的工作态度， 吸引了一大批销售精英人才，在松原市各区县与通信运营商建立了广泛的合作，在闹市区及社区网格都设立了网点， 并安排了销售人员，代理代办电信产品和业务，与运营商之间通过合作，取得...
+                    四平市四方通信有限公司 ，主要致力于通信行业的信息服务、电子产品销售、电信业务代理代办、 电子商务等业务。公司的经营理念是:“合作、共赢、努力、创新、发展”。公司成立以来，以一支技术精湛的服务团队， 以卓越的服务品质、专业的服务实力，为不同群体的用户提供更高更优质的服务。凭借多年的行业运营经验， 依托强大的通信市场布局和销售网络覆盖，遵循“优质、高效、团结、奉献的工作态度， 吸引了一大批销售精英人才，在松原市各区县与通信运营商建立了广泛的合作，在闹市区及社区网格都设立了网点， 并安排了销售人员，代理代办电信产品和业务，与运营商之间通过合作，取得...
                     <a href="javascript:;">more></a>
                 </p>
             </div>
         </div>
         <div class="product-show">
-            
+            <h1>产品展示</h1>
+            <h2></h2>
+            <h1>PRODUCTS</h1>
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                      <img src="./images/111.jpg" />
+                      <em></em>
+                      <span>华为MATE 8</span>
+                    </li>
+                    <li>
+                      <img src="./images/121.jpg" />
+                      <em></em>
+                      <span>MEIZU PRO 5</span>
+                    </li>
+                    <li>
+                      <img src="./images/131.jpg" />
+                      <em></em>
+                      <span>OPPO R7 PLUD</span>
+                    </li>
+                    <li>
+                      <img src="./images/111.jpg" />
+                      <em></em>
+                      <span>华为MATE 8</span>
+                    </li>
+                    <li>
+                      <img src="./images/121.jpg" />
+                      <em></em>
+                      <span>MEIZU PRO 5</span>
+                    </li>
+                    <li>
+                      <img src="./images/131.jpg" />
+                      <em></em>
+                      <span>OPPO R7 PLUD</span>
+                    </li>
+                     <li>
+                      <img src="./images/111.jpg" />
+                      <em></em>
+                      <span>华为MATE 8</span>
+                    </li>
+                    <li>
+                      <img src="./images/121.jpg" />
+                      <em></em>
+                      <span>MEIZU PRO 5</span>
+                    </li>
+                    <li>
+                      <img src="./images/131.jpg" />
+                      <em></em>
+                      <span>OPPO R7 PLUD</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-
+         <div class="friend-links">
+            <h1>友情链接</h1>
+            <h2></h2>
+            <h1>LINKS</h1>
+          </div>
     </div>
     <div class="footer">
+      <p>Copyrightt&copy;2016   四平市四方通信有限公司</p>
     </div>
+    <script src="./js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide",
+            animationLoop: false,
+            itemWidth: 345,
+            itemMargin:10,
+            move:3,
+            animationLoop:true,
+            slideshowSpeed:5000
+          });
+        });
+      })
+      </script>
 </body>
 </html>
