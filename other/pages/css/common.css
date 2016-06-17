@@ -1,0 +1,44 @@
+/*头部与尾部css*/
+.header {
+	height: 78px;
+	width: 1440px;
+	margin: 0 auto;
+	padding: 11px 0;
+	background-color: #f6f6f6;
+}
+
+.header .logo {
+	display: inline-block;
+	height: 78px;
+	width: 467px;
+	margin-left: 40px;
+	text-indent: -2000px;
+	background: url("../images/logo.gif") no-repeat 0 0; 
+}
+
+.header .nav {
+	float: right;
+	height: 78px;
+	line-height: 78px;
+	margin-right: 40px;
+}
+
+.header .nav li {
+	float: left;
+	padding: 0 30px;
+}
+
+.header .nav li a {
+	color: #231815;
+	font-size: 20px;
+}
+
+.header .nav li a:hover{
+	text-decoration: none;
+}
+
+.header .nav li .active {
+	color: #000;
+	border-bottom: 2px solid #000;
+	font-weight: bold;
+}

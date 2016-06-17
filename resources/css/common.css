@@ -138,6 +138,7 @@ body *{
 	line-height: 45px;
 	transition: all .5s ease-out 0s;
 	z-index: 10000; 
+	opacity: 1;
 }
 
 .content .fixed-sub a {

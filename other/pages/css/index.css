@@ -1,0 +1,120 @@
+﻿/*首页css*/
+.content {
+	width: 1440px;
+	margin: 0 auto;
+}
+
+.content .ad-img {
+	width: 1440px;
+	height: 514px;
+}
+
+.news {
+	width: 1348px;
+	margin: 48px auto 32px;
+}
+
+.news div {
+	float: left;
+	width: 484px;
+	margin-right: 52px;
+}
+
+.news div h1 {
+	font-size: 30px;
+	padding-bottom:15px; 
+	border-bottom: 1px solid #000;
+}
+
+.news div span {
+	font-size: 167.35px;
+	color: #6f6f6f;
+}
+
+.news ul {
+	float: left;
+	margin-left: 60px;
+}
+
+.news ul h1 {
+	height: 24px;
+	width: 330px;
+	margin-bottom: 10px;
+	line-height: 24px;
+	text-indent: 5px;
+	font-size: 20px;
+	border-left: 3px solid #000;
+}
+
+.news ul h1 a {
+	float: right;
+	font-size: 16px;
+	color: #95827e;
+}
+
+.news ul li {
+	height: 38px;
+	line-height: 38px;
+	font-size: 16px;
+	border-bottom: 1px dashed #99918e;
+}
+
+.news ul li a{
+	display: inline-block;
+	width: 200px;
+	color: #99918e;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news ul li span {
+	float: right;
+	color: #99918e;
+}
+
+.com-profile {
+	width: 1440px;
+	height: 469px;
+}
+
+.com-profile img {
+	width: 832px;
+	height: 469px;
+}
+
+.com-profile div {
+	float: right;
+	width: 518px;
+	height: 402px;
+	padding: 23px 50px 45px 40px;
+	background-color:#e5e5e4;
+}
+
+.com-profile div h1 {
+	height: 80px;
+	font-size: 30px;
+	color: #4a4a4a;
+}
+
+.com-profile div h1 span {
+	display: block;
+	width: 130px;
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px;
+	letter-spacing: 2.5px;
+	text-align: justify;
+}
+
+.com-profile div p {
+	text-indent: 36px;
+	font-size: 16px;
+	color: #7e7e7e;
+	line-height: 36px;
+}
+
+.com-profile div p a {
+	float: right;
+	font-size: 16px;
+	color: #7e7e7e;
+}
