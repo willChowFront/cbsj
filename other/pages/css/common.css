@@ -1,17 +1,22 @@
 /*头部与尾部css*/
 .header {
 	height: 78px;
-	width: 1440px;
+	width: 100%;
+	min-width: 1024px;
 	margin: 0 auto;
 	padding: 11px 0;
 	background-color: #f6f6f6;
+} 
+
+.header div {
+	width: 1024px;
+	margin: 0 auto;
 }
 
 .header .logo {
 	display: inline-block;
 	height: 78px;
 	width: 467px;
-	margin-left: 40px;
 	text-indent: -2000px;
 	background: url("../images/logo.gif") no-repeat 0 0; 
 }
@@ -20,12 +25,11 @@
 	float: right;
 	height: 78px;
 	line-height: 78px;
-	margin-right: 40px;
 }
 
 .header .nav li {
 	float: left;
-	padding: 0 30px;
+	padding: 0 5px;
 }
 
 .header .nav li a {
@@ -35,6 +39,10 @@
 
 .header .nav li a:hover{
 	text-decoration: none;
+	padding: 15px 3px;
+	background-color: #fff;
+	box-shadow: 5px 5px 35px #999;
+	border-radius: 5px;
 }
 
 .header .nav li .active {
@@ -55,4 +63,32 @@
 	color: #888888;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #cbc9ca;
+}
+
+.none {
+	display: none;
+
+}
+
+.show-list {
+	position: relative;
+}
+
+.show-list:hover span{
+	display: block;
+	width: 121px;
+	position: absolute;
+	left: 6px;
+	top: 59px;
+	background-color: #F6F6F6;
+	text-align: center;
+	border: 1px solid #999;
+}
+
+.header .show-list span a {
+	display: block;
+	border-bottom: 1px solid #999;
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
 }

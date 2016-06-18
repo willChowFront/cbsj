@@ -1,0 +1,46 @@
+.com-profile {
+	width: 1024px;
+	height: 815px;
+	margin: 50px auto;
+}
+
+.com-profile img {
+	width: 600px;
+	height: 815px;
+}
+
+.com-profile div {
+	float: right;
+	width: 334px;
+	height: 745px;
+	padding: 23px 50px 45px 40px;
+	background-color:#e5e5e4;
+}
+
+.com-profile div h1 {
+	height: 80px;
+	font-size: 30px;
+	color: #4a4a4a;
+}
+
+.com-profile div h1 span {
+	display: block;
+	width: 130px;
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px;
+	letter-spacing: 2.5px;
+	text-align: justify;
+}
+
+.com-profile div p {
+	text-indent: 36px;
+	font-size: 16px;
+	color: #7e7e7e;
+	line-height: 25px;
+}
+
+.com-profile div p a {
+	float: right;
+	font-size: 16px;
+	color: #7e7e7e;
+}

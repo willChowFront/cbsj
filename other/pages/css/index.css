@@ -1,23 +1,24 @@
 ﻿/*首页css*/
-.content {
-	width: 1440px;
-	margin: 0 auto;
-}
-
-.content .ad-img {
-	width: 1440px;
+.ad-img img{
+	width: 100%;
+	min-width: 1024px;
 	height: 514px;
 }
 
+.content {
+	width: 1024px;
+	margin: 0 auto;
+}
+
 .news {
-	width: 1348px;
+	width: 1024px;
 	margin: 48px auto 32px;
 }
 
 .news div {
 	float: left;
-	width: 484px;
-	margin-right: 52px;
+	width: 316px;
+	margin-right: 20px;
 }
 
 .news div h1 {
@@ -27,18 +28,19 @@
 }
 
 .news div span {
-	font-size: 167.35px;
+	font-size: 109.35px;
 	color: #6f6f6f;
+	font-weight: bolder;
 }
 
 .news ul {
 	float: left;
-	margin-left: 60px;
+	margin-left: 30px;
 }
 
 .news ul h1 {
 	height: 24px;
-	width: 330px;
+	width: 310px;
 	margin-bottom: 10px;
 	line-height: 24px;
 	text-indent: 5px;
@@ -74,18 +76,18 @@
 }
 
 .com-profile {
-	width: 1440px;
+	width: 1024px;
 	height: 469px;
 }
 
 .com-profile img {
-	width: 832px;
+	width: 600px;
 	height: 469px;
 }
 
 .com-profile div {
 	float: right;
-	width: 518px;
+	width: 334px;
 	height: 400px;
 	padding: 23px 50px 45px 40px;
 	background-color:#e5e5e4;
@@ -110,7 +112,7 @@
 	text-indent: 36px;
 	font-size: 16px;
 	color: #7e7e7e;
-	line-height: 36px;
+	line-height: 25px;
 }
 
 .com-profile div p a {
@@ -139,7 +141,7 @@
 
 .product-show div {
 	margin: 0 auto;
-	width: 1040px;
+	width: 1020px;
 	margin-top: 20px;
 }
 
@@ -149,7 +151,7 @@
 
 .product-show div ul li span {
 	display: block;
-	width: 345px;
+	width: 340px;
 	text-align: center;
 	margin: 0 auto;
 	color: #4a4a4a;

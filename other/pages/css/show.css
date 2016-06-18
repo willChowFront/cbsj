@@ -1,0 +1,48 @@
+.product-show , .friend-links{
+	margin-top: 50px;
+}
+
+.product-show h1 ,.friend-links h1{
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 2.5px;
+	color: #4a4a4a;
+}
+
+.product-show h2 , .friend-links h2{
+	height: 3px;
+	width: 80px;
+	background-color: #4a4a4a;
+	margin: 10px auto;
+}
+
+.product-show div {
+	margin: 0 auto;
+	width: 1020px;
+	margin-top: 20px;
+}
+
+.product-show div ul li {
+	float: left;
+}
+
+.product-show div ul li span {
+	display: block;
+	width: 340px;
+	text-align: center;
+	margin: 0 auto;
+	color: #4a4a4a;
+}
+
+.product-show div ul li em {
+	display: block;
+	width: 40px;
+	margin: 0 auto;
+	margin-top: 15px;
+	height: 2px;
+	background-color: #4a4a4a;
+}
+
+.content .flex-control-nav {
+	display: block;
+}
