@@ -66,7 +66,7 @@
 	width: 100%;
 	text-align: center;
 	font-size: 36px;
-	color: #999;
+	color: #c49f66;
 	font-weight: normal;
 }
 
@@ -123,7 +123,7 @@
 	margin:0 auto;
 	margin-top: 20px;
 	font-size: 16px;
-	color: #999;
+	color: #c49f66;
 }
 
 .content  .common-a:hover {
@@ -152,7 +152,7 @@
 	width: 20px;
 	margin-left: -10px;
 	height: 1px;
-	background-color: #999;
+	background-color: #c49f66;
 	transition: width 0.3s ease-out , left 0.3s ease-out ,margin-left 0.3s ease-out;
 }
 
@@ -163,7 +163,7 @@
 	bottom: 0;
 	width: 0;
 	height: 1px;
-	background-color: #999;
+	background-color: #c49f66;
 	transition: width 0.5s ease-out 0.8s;
 }
 
@@ -174,7 +174,7 @@
 	bottom: 0;
 	width: 0;
 	height: 1px;
-	background-color: #999;
+	background-color: #c49f66;
 	transition: width 0.5s ease-out 0.8s;
 }
 
@@ -185,7 +185,7 @@
 	top: 0;
 	height: 0;
 	width: 1px;
-	background-color: #999;
+	background-color: #c49f66;
 	transition: height 0.5s ease-out 0.3s;
 }
 
@@ -196,7 +196,7 @@
 	top: 0;
 	height: 0;
 	width: 1px;
-	background-color: #999;
+	background-color: #c49f66;
 	transition: height 0.5s ease-out 0.3s;
 }
 

@@ -1,6 +1,13 @@
+
+@font-face {
+  font-family: 'founder';
+  src: url('../fonts/founder.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body *{
-	/*font-family: Conv_Whitney-Light,Arial;*/
-	color: #737070;
+	font-family: founder;
 }
 
 .none {
@@ -13,17 +20,18 @@ body *{
 	top: 0;
 	width: 100%;
 	z-index: 10000;
-	border-bottom: 1px solid #bbb;
+	border-bottom: 2px solid #fff;
 	height: 175px;
+	background-color: rgba(94,84,72,0.3);
 }
 
 .header .logo {
 	display: block;
-	width: 120px;
+	width: 147px;
 	height: 68%;
 	margin: 0 auto;
-	background:url("../img/logo.png") no-repeat 0 0;
-	background-size: 120px 120px;
+	background:url("../img/logo.gif") no-repeat 0 30px;
+	background-size: 147px 60px;
 	text-indent: -2000px;
 }
 
@@ -56,7 +64,7 @@ body *{
 
 .header ul li a {
 	display:inline-block;
-	color:#bbb;
+	color:#fff;
 	font-size: 16px;
 }
 
@@ -82,7 +90,7 @@ body *{
 	width: 100%;
 	margin-top: 30px;
 	padding-top: 1px;
-	background-color: #4D4D4D;
+	background-color: #685443;
 }
 
 .footer div {
@@ -118,7 +126,7 @@ body *{
 }
 
 .fixed-header {
-	background-color:#fff; 
+	background-color:rgba(94,84,72,1);; 
 	box-shadow: 0 3px 3px 1px rgba(176,175,175,.2);
 	border-bottom-color:#F8F8F8;
 	height: 140px;
@@ -128,6 +136,11 @@ body *{
 
 .fixed-header ul li .active:after {
 	bottom: -14px;
+	background-color: #fff;
+}
+
+.fixed-header ul li .active {
+	color: #fff;
 }
 
 .content .fixed-sub {
