@@ -267,14 +267,12 @@
 
 	<script src="../resources/js/jquery.flexslider.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function(){
-			$(window).load(function() {
-			  $('.flexslider').flexslider({
+		window.onload = function(){
+			$('.flexslider').flexslider({
 			    animation: "slide"
 			  });
-			});
-		})
-		
+		}
 	</script>
+	
 </body>
 </html>
