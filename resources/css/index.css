@@ -14,14 +14,25 @@
 	height: 100%;
 }
 
+@keyframes bump {
+	0%,
+	100% {
+		bottom: 90px;
+	}
+	50%{
+		bottom: 110px;
+	}
+}
+
 .content-top .arrow {
 	position: absolute;
 	left: 50%;
-	bottom: 90px;
 	margin-left: -21px;
 	width: 41px;
 	height: 41px;
 	background:url("../img/arrow.gif") no-repeat 0 0;
+	cursor: pointer;
+	animation: bump 1s infinite;
 }
 
 .content .sub-nav {
@@ -355,4 +366,7 @@
 	color: #fff;
 	transition: all 0.1s ease-out;
 }
+
+
+
 

@@ -12,8 +12,10 @@
 </div>
 <script type="text/javascript">
 	$(document).ready(function() {
+		var
+			winHeight = $(window).height();
   		$(window).scroll(function(ev){
-			if($(document).scrollTop() > 370){
+			if($(document).scrollTop() >= winHeight-160){
 				$('#J_subNav').addClass('fixed-sub');
 				$('#J_header').addClass('fixed-header');
 			}else{

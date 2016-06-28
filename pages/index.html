@@ -11,7 +11,7 @@
 <body>
 	<!--#include file="/pages/header.html"  -->
 	<div class="content">
-		<div class="content-top">
+		<div class="content-top" id="J_contentTop">
 			<img src="../resources/img/delete/index-bg.jpg">
 			<div class="sub-nav" id="J_subNav">
 				<div>
@@ -20,9 +20,9 @@
 					<a href="index-location-introduce.html">驻地介绍</a>
 				</div>
 			</div>
-			<span class="arrow"></span>
+			<span class="arrow" id="J_arrow"></span>
 		</div>
-		<div class="content-middle">
+		<div class="content-middle" id="J_contentMiddle">
 			<h1>中国·长白山</h1>
 			<div class="flexslider">
 		      <ul class="slides">
@@ -71,6 +71,13 @@
 			    animation: "slide"
 			  });
 			});
+			var
+				winHeight = $(window).height();
+			$('#J_contentTop').height(winHeight);
+
+			$('#J_arrow').click(function(ev){
+				$('body').animate({scrollTop:$('#J_contentMiddle').offset().top-160},1000);
+			})
 		})
 		
 	</script>

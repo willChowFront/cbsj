@@ -40,9 +40,9 @@ body *{
 	right: 15%;
 	top: 10%;
 	font-size: 18px;
-	color: #666;
+	color: #fff;
 	padding-bottom: 5px;
-	border-bottom: 1px solid #bbb;	
+	border-bottom: 1px solid #fff;	
 }
 
 .header .room-reservation:hover{
